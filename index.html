@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            button{
+                background-color:blue;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: antiquewhite;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 3px 3px 2px blue;">
+        <center>
+            <h2>JAVA Script Array......sort and reverse</h2>
+             <p>Click the button to sort and reverse the array</p>
+            <button onclick="sortfunction()">Sort me</button>
+            <br>
+            <br>
+            <button onclick="reversefunction()">Reverse me</button>
+            <p id="demo"></p>
+
+        <script>
+         var colors=["Red", "Blue", "Green", "Orange"]
+         
+         document.getElementById("demo").innerHTML=colors;
+         function sortfunction() {
+            colors.sort();
+            document.getElementById("demo").innerHTML=colors;
+         }
+         function reversefunction() {
+            colors.reverse();
+            document.getElementById("demo").innerHTML=colors;
+         }
+
+        </script>
+         </center> 
+    </body>
+</html>
